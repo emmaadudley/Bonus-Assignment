@@ -1,0 +1,18 @@
+---
+title: "R Notebook"
+author: "Emma Dudley"
+output: html_notebook
+---
+
+# Bonus Notebook 2
+
+```{r}
+data("faithful")
+library(ggplot2)
+```
+
+```{r}
+ggplot(faithful, aes(x=eruptions, y=waiting))+
+  geom_point()+
+  theme_classic()
+```
